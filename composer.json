@@ -49,9 +49,7 @@
             }
         },
         "patches": {
-            "drupal/core": {
-                "Reusable Patch Beta": "https://www.drupal.org/files/issues/2024-01-23/add_reusable_option_to_inline_block_creation-2999491-141.patch"
-            }
+            "drupal/core": []
         },
         "patchLevel": {
             "drupal/core": "-p2"
