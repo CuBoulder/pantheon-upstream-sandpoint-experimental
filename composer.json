@@ -22,7 +22,7 @@
         "cweagans/composer-patches": "^1.7",
         "drush/drush": "^13",
         "oomphinc/composer-installers-extender": "^2.0",
-        "pantheon-upstreams/upstream-configuration": "dev-master"
+        "pantheon-systems/upstream-management": "^1.0"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -103,35 +103,17 @@
             "cweagans/composer-patches": true,
             "drupal/core-composer-scaffold": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
-            "simplesamlphp/composer-module-installer": true,
             "wikimedia/composer-merge-plugin": true,
             "phpstan/extension-installer": true,
             "drupal/core-project-message": true,
             "php-http/discovery": true,
             "pantheon-systems/upstream-management": true,
             "oomphinc/composer-installers-extender": true,
-            "simplesamlphp/composer-xmlprovider-installer": true,
             "tbachert/spi": true
         }
     },
     "scripts": {
-        "post-update-cmd": [
-            "rm -rf vendor/simplesamlphp/simplesamlphp/metadata",
-            "rm -rf vendor/simplesamlphp/simplesamlphp/config",
-            "rm -rf vendor/simplesamlphp/simplesamlphp/cert",
-            "ln -sf ../../../private/metadata vendor/simplesamlphp/simplesamlphp/metadata",
-            "ln -sf ../../../private/config vendor/simplesamlphp/simplesamlphp/config",
-            "ln -sf ../../../private/cert vendor/simplesamlphp/simplesamlphp/cert",
-            "composer dump-autoload -o"
-        ],
-        "post-install-cmd": [
-            "rm -rf vendor/simplesamlphp/simplesamlphp/metadata",
-            "rm -rf vendor/simplesamlphp/simplesamlphp/config",
-            "rm -rf vendor/simplesamlphp/simplesamlphp/cert",
-            "ln -sf ../../../private/metadata vendor/simplesamlphp/simplesamlphp/metadata",
-            "ln -sf ../../../private/config vendor/simplesamlphp/simplesamlphp/config",
-            "ln -sf ../../../private/cert vendor/simplesamlphp/simplesamlphp/cert",
-            "composer dump-autoload -o"
-        ]
+        "post-update-cmd": ["composer dump-autoload -o"],
+        "post-install-cmd": ["composer dump-autoload -o"]
     }
 }
