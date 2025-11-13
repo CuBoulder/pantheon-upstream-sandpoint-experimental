@@ -13,8 +13,8 @@
     ],
     "require": {
         "simplehtmldom/simplehtmldom": "^2.0@RC",
-        "npm-asset/codemirror": "5.65.3",
-        "npm-asset/inputmask": "5.0.7",
+        "npm-asset/codemirror": "5.65.12",
+        "npm-asset/inputmask": "5.0.9",
         "npm-asset/intl-tel-input": "17.0.19",
         "npm-asset/jquery.rateit": "1.1.5",
         "npm-asset/select2": "4.0.13",
