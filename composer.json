@@ -38,12 +38,10 @@
     },
     "extra": {
         "patches": {
-            "drupal/core": {
-                "Add reusable option to inline block creation": "patches/add_reusable_option_to_inline_block_creation-drupal11.patch"
-            }
+            "drupal/core": []
         },
         "patchLevel": {
-            "drupal/core": "-p1"
+            "drupal/core": "-p2"
         },
         "drupal-scaffold": {
             "locations": {
@@ -55,12 +53,6 @@
                 "[project-root]/pantheon.upstream.yml": false,
                 "[project-root]/.gitattributes": false
             }
-        },
-        "patches": {
-            "drupal/core": []
-        },
-        "patchLevel": {
-            "drupal/core": "-p2"
         },
         "installer-types": [
             "npm-asset",
