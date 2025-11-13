@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6c82cffe97276cd0b70104557414b9cf",
+    "content-hash": "af3d0ab6ae903bdada970ce242c8c7d7",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -885,7 +885,7 @@
         },
         {
             "name": "cu-boulder/boulder_base",
-            "version": "20251029",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CuBoulder/tiamat-theme.git",
@@ -897,6 +897,7 @@
                 "reference": "62cc306154eb27b65e3a3d121920fda66eb967c2",
                 "shasum": ""
             },
+            "default-branch": true,
             "type": "drupal-custom-theme",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -905,7 +906,7 @@
             "description": "University of Colorado Boulder base theme",
             "support": {
                 "issues": "https://github.com/CuBoulder/tiamat-theme/issues",
-                "source": "https://github.com/CuBoulder/tiamat-theme/tree/20251029"
+                "source": "https://github.com/CuBoulder/tiamat-theme/tree/main"
             },
             "time": "2025-10-29T15:25:15+00:00"
         },
@@ -1187,7 +1188,7 @@
         },
         {
             "name": "cu-boulder/ucb_custom_entities",
-            "version": "20251029",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CuBoulder/tiamat-custom-entities.git",
@@ -1199,6 +1200,7 @@
                 "reference": "4e40eceb35a5e07bda5b4587912a27b268ddc2af",
                 "shasum": ""
             },
+            "default-branch": true,
             "type": "drupal-custom-module",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -1207,7 +1209,7 @@
             "description": "University of Colorado Boulder custom entities",
             "support": {
                 "issues": "https://github.com/CuBoulder/tiamat-custom-entities/issues",
-                "source": "https://github.com/CuBoulder/tiamat-custom-entities/tree/20251029"
+                "source": "https://github.com/CuBoulder/tiamat-custom-entities/tree/main"
             },
             "time": "2025-10-29T15:21:16+00:00"
         },
@@ -8138,11 +8140,11 @@
         },
         {
             "name": "pantheon-upstreams/upstream-configuration",
-            "version": "dev-master",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "upstream-configuration/locked",
-                "reference": "9c6fe7133d51f22c87c201e25cfb3f76381b32af"
+                "reference": "9e502713d6c1c2753335e927015d3b9067d5995b"
             },
             "require": {
                 "asm89/stack-cors": "v2.3.0",
@@ -8159,7 +8161,7 @@
                 "consolidation/robo": "5.1.0",
                 "consolidation/site-alias": "4.1.1",
                 "consolidation/site-process": "5.4.2",
-                "cu-boulder/boulder_base": "20251029",
+                "cu-boulder/boulder_base": "dev-main",
                 "cu-boulder/boulder_d11_profile": "dev-main",
                 "cu-boulder/ckeditor5_bootstrap_accordion": "dev-main",
                 "cu-boulder/ckeditor5_icons": "dev-main",
@@ -8170,7 +8172,7 @@
                 "cu-boulder/ucb_bootstrap_layouts": "dev-main",
                 "cu-boulder/ucb_campus_news": "dev-main",
                 "cu-boulder/ucb_ckeditor_plugins": "dev-main",
-                "cu-boulder/ucb_custom_entities": "20251029",
+                "cu-boulder/ucb_custom_entities": "dev-main",
                 "cu-boulder/ucb_default_content": "dev-main",
                 "cu-boulder/ucb_drush_commands": "v1.1.1",
                 "cu-boulder/ucb_focal_image_enable": "dev-main",
@@ -8308,7 +8310,6 @@
                 "revolt/event-loop": "v1.0.7",
                 "robrichards/xmlseclibs": "3.1.1",
                 "sebastian/diff": "7.0.0",
-                "simplehtmldom/simplehtmldom": "2.0-RC2",
                 "symfony/console": "v7.3.6",
                 "symfony/dependency-injection": "v7.3.6",
                 "symfony/deprecation-contracts": "v3.6.0",
@@ -9553,81 +9554,6 @@
                 }
             ],
             "time": "2025-02-07T04:55:46+00:00"
-        },
-        {
-            "name": "simplehtmldom/simplehtmldom",
-            "version": "2.0-RC2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/simplehtmldom/simplehtmldom.git",
-                "reference": "3c87726400e59d8e1bc4709cfe82353abeb0f4d1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/simplehtmldom/simplehtmldom/zipball/3c87726400e59d8e1bc4709cfe82353abeb0f4d1",
-                "reference": "3c87726400e59d8e1bc4709cfe82353abeb0f4d1",
-                "shasum": ""
-            },
-            "require": {
-                "ext-iconv": "*",
-                "php": ">=5.6"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^6 || ^7"
-            },
-            "suggest": {
-                "ext-curl": "Needed to support cURL downloads in class HtmlWeb",
-                "ext-mbstring": "Allows better decoding for multi-byte documents",
-                "ext-openssl": "Allows loading HTTPS pages when using cURL"
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "./"
-                ],
-                "exclude-from-classmap": [
-                    "/example/",
-                    "/manual/",
-                    "/testcase/",
-                    "/tests/",
-                    "simple_html_dom.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "S.C. Chen",
-                    "role": "Developer"
-                },
-                {
-                    "name": "John Schlick",
-                    "role": "Developer"
-                },
-                {
-                    "name": "logmanoriginal",
-                    "role": "Developer"
-                }
-            ],
-            "description": "A fast, simple and reliable HTML document parser for PHP.",
-            "homepage": "https://simplehtmldom.sourceforge.io/",
-            "keywords": [
-                "Simple",
-                "dom",
-                "html",
-                "parser",
-                "php",
-                "simplehtmldom"
-            ],
-            "support": {
-                "issues": "https://sourceforge.net/p/simplehtmldom/bugs/",
-                "rss": "https://sourceforge.net/p/simplehtmldom/news/feed.rss",
-                "source": "https://sourceforge.net/p/simplehtmldom/repository/",
-                "wiki": "https://simplehtmldom.sourceforge.io/docs/"
-            },
-            "time": "2019-11-09T15:42:50+00:00"
         },
         {
             "name": "symfony/console",

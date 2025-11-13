@@ -12,7 +12,6 @@
         }
     ],
     "require": {
-        "simplehtmldom/simplehtmldom": "2.0-RC2",
         "npm-asset/codemirror": "5.65.12",
         "npm-asset/inputmask": "5.0.9",
         "npm-asset/intl-tel-input": "17.0.19",
@@ -27,7 +26,7 @@
         "npm-asset/tippy.js": "6.3.7",
         "npm-asset/northernco--ckeditor5-anchor-drupal": "0.5.0",
         "composer/installers": "v2.3.0",
-        "cu-boulder/boulder_base": "20251029",
+        "cu-boulder/boulder_base": "dev-main",
         "cu-boulder/boulder_d11_profile": "dev-main",
         "cu-boulder/express_admin": "dev-main",
         "cu-boulder/ucb_admin_menus": "dev-main",
@@ -36,7 +35,7 @@
         "cu-boulder/ucb_bootstrap_layouts": "dev-main",
         "cu-boulder/ucb_campus_news": "dev-main",
         "cu-boulder/ucb_ckeditor_plugins": "dev-main",
-        "cu-boulder/ucb_custom_entities": "20251029",
+        "cu-boulder/ucb_custom_entities": "dev-main",
         "cu-boulder/ucb_default_content": "dev-main",
         "cu-boulder/ucb_drush_commands": "v1.1.1",
         "cu-boulder/ucb_focal_image_enable": "dev-main",
