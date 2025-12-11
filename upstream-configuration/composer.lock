@@ -916,12 +916,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/CuBoulder/tiamat10-profile.git",
-                "reference": "a1d18b6b9842e03aeb709a29d94e8e5e6acfadce"
+                "reference": "e95440ce950ad2e67502711d720daf95d23838af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CuBoulder/tiamat10-profile/zipball/a1d18b6b9842e03aeb709a29d94e8e5e6acfadce",
-                "reference": "a1d18b6b9842e03aeb709a29d94e8e5e6acfadce",
+                "url": "https://api.github.com/repos/CuBoulder/tiamat10-profile/zipball/e95440ce950ad2e67502711d720daf95d23838af",
+                "reference": "e95440ce950ad2e67502711d720daf95d23838af",
                 "shasum": ""
             },
             "type": "drupal-custom-profile",
@@ -934,7 +934,7 @@
                 "issues": "https://github.com/CuBoulder/tiamat10-profile/issues",
                 "source": "https://github.com/CuBoulder/tiamat10-profile/tree/tiamat-d11"
             },
-            "time": "2025-12-11T21:50:01+00:00"
+            "time": "2025-12-11T22:48:02+00:00"
         },
         {
             "name": "cu-boulder/ckeditor5_bootstrap_accordion",
