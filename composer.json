@@ -43,7 +43,7 @@
             }
         },
         "patchLevel": {
-            "drupal/core": "-p2"
+            "drupal/core": "-p3"
         },
         "drupal-scaffold": {
             "locations": {
