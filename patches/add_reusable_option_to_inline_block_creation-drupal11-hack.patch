@@ -1,7 +1,7 @@
-diff --git a/modules/block_content/src/Plugin/Block/BlockContentBlock.php b/modules/block_content/src/Plugin/Block/BlockContentBlock.php
+diff --git a/web/core/modules/block_content/src/Plugin/Block/BlockContentBlock.php b/modules/block_content/src/Plugin/Block/BlockContentBlock.php
 index 7c862f499fd418c8047d14f7f8a815c03b8c9f33..100dca4bdd038c5394b2064657aa1d49b99cd931 100644
---- a/modules/block_content/src/Plugin/Block/BlockContentBlock.php
-+++ b/modules/block_content/src/Plugin/Block/BlockContentBlock.php
+--- a/web/core/modules/block_content/src/Plugin/Block/BlockContentBlock.php
++++ b/web/core/modules/block_content/src/Plugin/Block/BlockContentBlock.php
 @@ -4,13 +4,16 @@
  
  use Drupal\block_content\BlockContentUuidLookup;
@@ -115,8 +115,8 @@ index 7c862f499fd418c8047d14f7f8a815c03b8c9f33..100dca4bdd038c5394b2064657aa1d49
     */
 diff --git a/modules/layout_builder/layout_builder.links.contextual.yml b/modules/layout_builder/layout_builder.links.contextual.yml
 index 4bbfcc9e64deeff5814dd42c68b5c4cc316eabc1..6e408e4dcbf192297e40877af78d9f9932d6681b 100644
---- a/modules/layout_builder/layout_builder.links.contextual.yml
-+++ b/modules/layout_builder/layout_builder.links.contextual.yml
+--- a/web/core/modules/layout_builder/layout_builder.links.contextual.yml
++++ b/web/core/modules/layout_builder/layout_builder.links.contextual.yml
 @@ -27,3 +27,13 @@ layout_builder_block_remove:
        class: ['use-ajax']
        data-dialog-type: dialog
@@ -133,8 +133,8 @@ index 4bbfcc9e64deeff5814dd42c68b5c4cc316eabc1..6e408e4dcbf192297e40877af78d9f99
 +      data-dialog-renderer: off_canvas
 diff --git a/modules/layout_builder/layout_builder.routing.yml b/modules/layout_builder/layout_builder.routing.yml
 index fa72dcec931f8cec5fb139e35addba1618e4d9ff..353c15e79c3f62e0ff90e348f8c34a73d83012d0 100644
---- a/modules/layout_builder/layout_builder.routing.yml
-+++ b/modules/layout_builder/layout_builder.routing.yml
+--- a/web/core/modules/layout_builder/layout_builder.routing.yml
++++ b/web/core/modules/layout_builder/layout_builder.routing.yml
 @@ -128,6 +128,19 @@ layout_builder.remove_block:
        section_storage:
          layout_builder_tempstore: TRUE
@@ -157,8 +157,8 @@ index fa72dcec931f8cec5fb139e35addba1618e4d9ff..353c15e79c3f62e0ff90e348f8c34a73
    defaults:
 diff --git a/modules/layout_builder/src/Element/LayoutBuilder.php b/modules/layout_builder/src/Element/LayoutBuilder.php
 index 8e192b7a1eefa18f9da28c5da5b3eb6d6d818af9..b5a50647d46ec15738d2638d0d0083e1de3016d1 100644
---- a/modules/layout_builder/src/Element/LayoutBuilder.php
-+++ b/modules/layout_builder/src/Element/LayoutBuilder.php
+--- a/web/core/modules/layout_builder/src/Element/LayoutBuilder.php
++++ b/web/core/modules/layout_builder/src/Element/LayoutBuilder.php
 @@ -170,7 +170,8 @@ protected function buildAddSectionLink(SectionStorageInterface $section_storage
          $title = $this->t('Add section <span class="visually-hidden">at start of layout</span>');
        }
@@ -223,8 +223,8 @@ index 8e192b7a1eefa18f9da28c5da5b3eb6d6d818af9..b5a50647d46ec15738d2638d0d0083e1
              'section_storage_type' => $storage_type,
 diff --git a/modules/layout_builder/src/Form/AddBlockForm.php b/modules/layout_builder/src/Form/AddBlockForm.php
 index 63c79c2c46c63ede803afd01688609a2f9eb379b..6584b7a305c6e598ed92e00df712c9352113ef78 100644
---- a/modules/layout_builder/src/Form/AddBlockForm.php
-+++ b/modules/layout_builder/src/Form/AddBlockForm.php
+--- a/web/core/modules/layout_builder/src/Form/AddBlockForm.php
++++ b/web/core/modules/layout_builder/src/Form/AddBlockForm.php
 @@ -2,8 +2,10 @@
  
  namespace Drupal\layout_builder\Form;
@@ -342,8 +342,8 @@ index 63c79c2c46c63ede803afd01688609a2f9eb379b..6584b7a305c6e598ed92e00df712c935
  }
 diff --git a/modules/layout_builder/src/Form/ConfigureBlockFormBase.php b/modules/layout_builder/src/Form/ConfigureBlockFormBase.php
 index 76f2526d04108a52f4f3183c6f90d5ac779582bc..a957cf15beebb7d96b56e53c2628de6644fb1f72 100644
---- a/modules/layout_builder/src/Form/ConfigureBlockFormBase.php
-+++ b/modules/layout_builder/src/Form/ConfigureBlockFormBase.php
+--- a/web/core/modules/layout_builder/src/Form/ConfigureBlockFormBase.php
++++ b/web/core/modules/layout_builder/src/Form/ConfigureBlockFormBase.php
 @@ -7,6 +7,7 @@
  use Drupal\Core\Ajax\AjaxFormHelperTrait;
  use Drupal\Core\Block\BlockManagerInterface;
@@ -478,11 +478,11 @@ index 76f2526d04108a52f4f3183c6f90d5ac779582bc..a957cf15beebb7d96b56e53c2628de66
  
      $section = $this->sectionStorage->getSection($this->delta);
      $section->getComponent($this->uuid)->setConfiguration($configuration);
-diff --git a/modules/layout_builder/src/Form/MakeReusableBlockForm.php b/modules/layout_builder/src/Form/MakeReusableBlockForm.php
+diff --git a/web/core/modules/layout_builder/src/Form/MakeReusableBlockForm.php b/modules/layout_builder/src/Form/MakeReusableBlockForm.php
 new file mode 100644
 index 0000000000000000000000000000000000000000..dabba199706abd6cdcb31651922d3701b5e177ce
 --- /dev/null
-+++ b/modules/layout_builder/src/Form/MakeReusableBlockForm.php
++++ b/web/core/modules/layout_builder/src/Form/MakeReusableBlockForm.php
 @@ -0,0 +1,151 @@
 +<?php
 +
@@ -635,180 +635,12 @@ index 0000000000000000000000000000000000000000..dabba199706abd6cdcb31651922d3701
 +  }
 +
 +}
-diff --git a/modules/layout_builder/tests/src/FunctionalJavascript/InlineBlockTest.php b/modules/layout_builder/tests/src/FunctionalJavascript/InlineBlockTest.php
-index 75b465d1a263286a4f8a583b901400cddd608b47..2839f605daf80dbdc4e416911bec22ce0bf20d8e 100644
---- a/modules/layout_builder/tests/src/FunctionalJavascript/InlineBlockTest.php
-+++ b/modules/layout_builder/tests/src/FunctionalJavascript/InlineBlockTest.php
-@@ -150,6 +150,12 @@ public function testNoLayoutSave($operation, $no_save_button_text, $confirm_butt
-     $assert_session->pageTextContains('The block body');
-     $blocks = $this->blockStorage->loadMultiple();
-     $this->assertCount(1, $blocks);
-+    $this->addInlineBlockToLayout('Block title', 'The reusable block body', TRUE);
-+    $this->assertSaveLayout();
-+    $this->drupalGet('node/1');
-+    $assert_session->pageTextContains('The reusable block body');
-+    $blocks = $this->blockStorage->loadMultiple();
-+    $this->assertCount(2, $blocks);
-     /** @var \Drupal\Core\Entity\ContentEntityBase $block */
-     $block = array_pop($blocks);
-     $revision_id = $block->getRevisionId();
-@@ -219,7 +225,10 @@ public function testInlineBlocksRevisioning() {
-     ]));
-     // Enable layout builder and overrides.
-     $this->drupalGet(static::FIELD_UI_PREFIX . '/display/default');
--    $this->submitForm(['layout[enabled]' => TRUE, 'layout[allow_custom]' => TRUE], 'Save');
-+    $this->submitForm([
-+      'layout[enabled]' => TRUE,
-+      'layout[allow_custom]' => TRUE,
-+    ], 'Save');
-     $this->drupalGet('node/1/layout');
- 
-     // Add an inline block.
-@@ -281,7 +290,10 @@ public function testInlineBlocksRevisioningIntegrity() {
-       'create and edit custom blocks',
-     ]));
-     $this->drupalGet(static::FIELD_UI_PREFIX . '/display/default');
--    $this->submitForm(['layout[enabled]' => TRUE, 'layout[allow_custom]' => TRUE], 'Save');
-+    $this->submitForm([
-+      'layout[enabled]' => TRUE,
-+      'layout[allow_custom]' => TRUE,
-+    ], 'Save');
- 
-     $block_1_locator = static::INLINE_BLOCK_LOCATOR;
-     $block_2_locator = sprintf('%s + %s', static::INLINE_BLOCK_LOCATOR, static::INLINE_BLOCK_LOCATOR);
-@@ -500,7 +512,10 @@ public function testAccess() {
- 
-     // Enable layout builder and overrides.
-     $this->drupalGet(static::FIELD_UI_PREFIX . '/display/default');
--    $this->submitForm(['layout[enabled]' => TRUE, 'layout[allow_custom]' => TRUE], 'Save');
-+    $this->submitForm([
-+      'layout[enabled]' => TRUE,
-+      'layout[allow_custom]' => TRUE,
-+    ], 'Save');
- 
-     // Ensure we have 2 copies of the block in node overrides.
-     $this->drupalGet('node/1/layout');
-@@ -550,7 +565,10 @@ public function testAddWorkFlow() {
- 
-     // Enable layout builder and overrides.
-     $this->drupalGet(static::FIELD_UI_PREFIX . '/display/default');
--    $this->submitForm(['layout[enabled]' => TRUE, 'layout[allow_custom]' => TRUE], 'Save');
-+    $this->submitForm([
-+      'layout[enabled]' => TRUE,
-+      'layout[allow_custom]' => TRUE,
-+    ], 'Save');
- 
-     $layout_default_path = 'admin/structure/types/manage/bundle_with_section_field/display/default/layout';
-     $this->drupalGet($layout_default_path);
-@@ -566,11 +584,13 @@ public function testAddWorkFlow() {
-     // Add a basic block with the body field set.
-     $page->clickLink('Add block');
-     $assert_session->assertWaitOnAjaxRequest();
--    // Confirm with only 1 type the "Create content block" link goes directly t
-+    // Confirm with only 1 type the "Create content block" link goes directly to
-     // block add form.
-     $assert_session->linkNotExists('Basic block');
-     $this->clickLink('Create content block');
-     $assert_session->assertWaitOnAjaxRequest();
-+    $page->pressButton('Create inline block');
-+    $assert_session->assertWaitOnAjaxRequest();
-     $assert_session->fieldExists('Title');
- 
-     $this->createBlockContentType('advanced', 'Advanced block');
-@@ -578,8 +598,8 @@ public function testAddWorkFlow() {
-     $this->drupalGet($layout_default_path);
-     // Add a basic block with the body field set.
-     $page->clickLink('Add block');
--    // Confirm that, when more than 1 type exists, "Create content block" shows
--    // a list of block types.
-+    // Confirm that, when more than 1 type exists, "Create content block"
-+    // shows a list of block types.
-     $assert_session->assertWaitOnAjaxRequest();
-     $assert_session->linkNotExists('Basic block');
-     $assert_session->linkNotExists('Advanced block');
-@@ -591,6 +611,8 @@ public function testAddWorkFlow() {
- 
-     $this->clickLink('Advanced block');
-     $assert_session->assertWaitOnAjaxRequest();
-+    $page->pressButton('Create inline block');
-+    $assert_session->assertWaitOnAjaxRequest();
-     $assert_session->fieldExists('Title');
-   }
- 
-diff --git a/modules/layout_builder/tests/src/FunctionalJavascript/InlineBlockTestBase.php b/modules/layout_builder/tests/src/FunctionalJavascript/InlineBlockTestBase.php
-index 9aff647e639fe55a3a1f150a2d3704b60bfc58b9..75bbda3db8161c60ee9471026f7842f1e5ff2515 100644
---- a/modules/layout_builder/tests/src/FunctionalJavascript/InlineBlockTestBase.php
-+++ b/modules/layout_builder/tests/src/FunctionalJavascript/InlineBlockTestBase.php
-@@ -51,7 +51,10 @@ protected function setUp(): void {
- 
-     $this->drupalPlaceBlock('local_tasks_block');
- 
--    $this->createContentType(['type' => 'bundle_with_section_field', 'new_revision' => TRUE]);
-+    $this->createContentType([
-+      'type' => 'bundle_with_section_field',
-+      'new_revision' => TRUE,
-+    ]);
-     $this->createNode([
-       'type' => 'bundle_with_section_field',
-       'title' => 'The node title',
-@@ -135,8 +138,10 @@ protected function removeInlineBlockFromLayout() {
-    *   The title field value.
-    * @param string $body
-    *   The body field value.
-+   * @param bool $reusable
-+   *   Whether the block is reusable or not.
-    */
--  protected function addInlineBlockToLayout($title, $body) {
-+  protected function addInlineBlockToLayout($title, $body, $reusable = FALSE) {
-     $assert_session = $this->assertSession();
-     $page = $this->getSession()->getPage();
-     $page->clickLink('Add block');
-@@ -144,13 +149,34 @@ protected function addInlineBlockToLayout($title, $body) {
-     $this->assertNotEmpty($assert_session->waitForLink('Create content block'));
-     $this->clickLink('Create content block');
-     $assert_session->assertWaitOnAjaxRequest();
--    $textarea = $assert_session->waitForElement('css', '[name="settings[block_form][body][0][value]"]');
--    $this->assertNotEmpty($textarea);
--    $assert_session->fieldValueEquals('Title', '');
--    $page->findField('Title')->setValue($title);
--    $textarea->setValue($body);
--    $page->pressButton('Add block');
--    $this->assertDialogClosedAndTextVisible($body, static::INLINE_BLOCK_LOCATOR);
-+    if ($reusable === FALSE) {
-+      $page->pressButton('Create inline block');
-+      $assert_session->assertWaitOnAjaxRequest();
-+      $textarea = $assert_session->waitForElement('css', '[name="settings[block_form][body][0][value]"]');
-+      $this->assertNotEmpty($textarea);
-+      $assert_session->fieldValueEquals('Title', '');
-+      $page->findField('Title')->setValue($title);
-+      $textarea->setValue($body);
-+      $page->pressButton('Add block');
-+      $this->assertDialogClosedAndTextVisible($body, static::INLINE_BLOCK_LOCATOR);
-+    }
-+    else {
-+      $page->pressButton('Create reusable block');
-+      $assert_session->assertWaitOnAjaxRequest();
-+      $textarea = $assert_session->waitForElement('css', '[name="settings[block_form][body][0][value]"]');
-+      $this->assertNotEmpty($textarea);
-+      $assert_session->fieldValueEquals('Title', '');
-+      $page->findField('Title')->setValue($title);
-+      $textarea->setValue($body);
-+      $page->pressButton('Add block');
-+      $this->assertDialogClosedAndTextVisible($body, static::INLINE_BLOCK_LOCATOR);
-+      $page->findField('Admin Title')->setValue('Test Reusable block ' . $title);
-+      $page->pressButton('Add block');
-+      $this->assertDialogClosedAndTextVisible($body, static::INLINE_BLOCK_LOCATOR);
-+      $this->clickLink('Add block');
-+      $assert_session->assertWaitOnAjaxRequest();
-+      $assert_session->pageTextContains('Test Reusable block ' . $title);
-+    }
-   }
  
    /**
 diff --git a/modules/content_moderation/tests/src/Functional/LayoutBuilderContentModerationIntegrationTest.php b/modules/content_moderation/tests/src/Functional/LayoutBuilderContentModerationIntegrationTest.php
 index 35834e3bb35d535e613bcf4af6b3535eafc64c5c..4079b9ee9315f395da670f022366334b453d761f 100644
---- a/modules/content_moderation/tests/src/Functional/LayoutBuilderContentModerationIntegrationTest.php
-+++ b/modules/content_moderation/tests/src/Functional/LayoutBuilderContentModerationIntegrationTest.php
+--- a/web/core/modules/content_moderation/tests/src/Functional/LayoutBuilderContentModerationIntegrationTest.php
++++ b/web/core/modules/content_moderation/tests/src/Functional/LayoutBuilderContentModerationIntegrationTest.php
 @@ -179,7 +179,7 @@ public function testModeratedInlineBlockBundles() {
      $this->drupalGet("node/{$node->id()}/layout");
      $page->clickLink('Add block');

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e92a096402f967183fcbc34ca8b791b5",
+    "content-hash": "e109967e8d732e71ea24273f53b3b3cf",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -889,12 +889,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/CuBoulder/tiamat-theme.git",
-                "reference": "7f0c998b77eedd9198f2dab9188bca75bb77b2fc"
+                "reference": "13a82546b15d42402b8734876db4004df9617df2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CuBoulder/tiamat-theme/zipball/7f0c998b77eedd9198f2dab9188bca75bb77b2fc",
-                "reference": "7f0c998b77eedd9198f2dab9188bca75bb77b2fc",
+                "url": "https://api.github.com/repos/CuBoulder/tiamat-theme/zipball/13a82546b15d42402b8734876db4004df9617df2",
+                "reference": "13a82546b15d42402b8734876db4004df9617df2",
                 "shasum": ""
             },
             "default-branch": true,
@@ -908,7 +908,7 @@
                 "issues": "https://github.com/CuBoulder/tiamat-theme/issues",
                 "source": "https://github.com/CuBoulder/tiamat-theme/tree/main"
             },
-            "time": "2025-12-10T21:02:02+00:00"
+            "time": "2025-12-16T20:05:46+00:00"
         },
         {
             "name": "cu-boulder/boulder_profile",
@@ -1351,12 +1351,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/CuBoulder/ucb_site_configuration.git",
-                "reference": "be805a2880520ba4738b713e142d29fd1fe6567f"
+                "reference": "de7eaf4ac3eb782aa7e0d77c54240604ff12f849"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CuBoulder/ucb_site_configuration/zipball/be805a2880520ba4738b713e142d29fd1fe6567f",
-                "reference": "be805a2880520ba4738b713e142d29fd1fe6567f",
+                "url": "https://api.github.com/repos/CuBoulder/ucb_site_configuration/zipball/de7eaf4ac3eb782aa7e0d77c54240604ff12f849",
+                "reference": "de7eaf4ac3eb782aa7e0d77c54240604ff12f849",
                 "shasum": ""
             },
             "default-branch": true,
@@ -1370,7 +1370,7 @@
                 "issues": "https://github.com/CuBoulder/ucb_site_configuration/issues",
                 "source": "https://github.com/CuBoulder/ucb_site_configuration/tree/main"
             },
-            "time": "2025-11-18T17:10:16+00:00"
+            "time": "2025-12-16T17:30:59+00:00"
         },
         {
             "name": "cu-boulder/ucb_styled_block",
@@ -1486,12 +1486,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/CuBoulder/ucb_user_invite.git",
-                "reference": "59c2f6df2cad09178fadfbb747171f704884358d"
+                "reference": "88283e07f7661ceaf38671879c835e203e62abed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CuBoulder/ucb_user_invite/zipball/59c2f6df2cad09178fadfbb747171f704884358d",
-                "reference": "59c2f6df2cad09178fadfbb747171f704884358d",
+                "url": "https://api.github.com/repos/CuBoulder/ucb_user_invite/zipball/88283e07f7661ceaf38671879c835e203e62abed",
+                "reference": "88283e07f7661ceaf38671879c835e203e62abed",
                 "shasum": ""
             },
             "default-branch": true,
@@ -1505,7 +1505,7 @@
                 "issues": "https://github.com/CuBoulder/ucb_user_invite/issues",
                 "source": "https://github.com/CuBoulder/ucb_user_invite/tree/main"
             },
-            "time": "2025-11-14T17:46:41+00:00"
+            "time": "2025-12-16T18:02:28+00:00"
         },
         {
             "name": "cweagans/composer-patches",
